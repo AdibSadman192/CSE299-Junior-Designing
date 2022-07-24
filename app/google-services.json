@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202068079020",
+    "project_id": "rentway-f5446",
+    "storage_bucket": "rentway-f5446.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202068079020:android:aada687da96cd5ba25ca09",
+        "android_client_info": {
+          "package_name": "coding.insight.cleanuiloginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202068079020-3i6gh202ikuaf0g5r2uajurhq5qfdm3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmBBTNC_YZBUGDSXyPoGpl1l4uAQjVyPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202068079020-3i6gh202ikuaf0g5r2uajurhq5qfdm3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
