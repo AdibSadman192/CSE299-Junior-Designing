@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LoginActivity"
+
+    android:layout_gravity="center"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/already_nhave_an_naccount"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/account"
+            android:src="@drawable/ic_register_hero"
+            tools:ignore="ImageContrastCheck" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/loginLabelTv"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/captionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:textAlignment="center"
+        android:layout_below="@id/loginLabelTv"
+        />
+
+    <!--Email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
+        style="@style/parent"
+        android:layout_above="@id/passwordTil"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/emailEt"
+            style="@style/modifiedEditText"
+            android:hint="Email"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        style="@style/parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/passwordEt"
+            style="@style/modifiedEditText"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            style="@style/viewParent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="@string/forgot_password"
+            android:textColor="#00838F"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:clickable="true"
+            />
+    <!--Login Button-->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/bg_btn_blue"
+        android:layout_below="@id/passwordTil"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/haveAccountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_account_signup"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:weightSum="12"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/use_other_methods"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook"
+            android:contentDescription="@string/facebook" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_google_plus"
+            android:contentDescription="@string/google" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

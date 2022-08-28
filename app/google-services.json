@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "212830138218",
+    "project_id": "cse29902",
+    "storage_bucket": "cse29902.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212830138218:android:da0e0334206c94fa1c7f13",
+        "android_client_info": {
+          "package_name": "com.example.rentway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212830138218-lpvr3q4adb5oem2oe8oa8nqv2lf4nrjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAld3nkIuvk-ysOJKQcdxIIQOydKDxc1FI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212830138218-lpvr3q4adb5oem2oe8oa8nqv2lf4nrjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212830138218:android:2e1952947495f91a1c7f13",
+        "android_client_info": {
+          "package_name": "com.jaswikventures.firebaseloginsignup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212830138218-lpvr3q4adb5oem2oe8oa8nqv2lf4nrjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAld3nkIuvk-ysOJKQcdxIIQOydKDxc1FI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212830138218-lpvr3q4adb5oem2oe8oa8nqv2lf4nrjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

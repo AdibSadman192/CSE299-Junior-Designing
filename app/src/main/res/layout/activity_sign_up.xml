@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SignUpActivity"
+    android:background="@color/register_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Here’s\nyour first\nstep with \nus! "
+            android:textColor="@color/whiteTextColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_login_hero" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/signUpLabelTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/captionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:textAlignment="center"
+        android:layout_below="@id/signUpLabelTv"
+        />
+
+    <!--Email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
+        style="@style/parent"
+        android:layout_above="@id/passwordTil"
+        >
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        style="@style/parent"
+        android:layout_centerInParent="true"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Login Button-->
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordTil"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn"
+            android:text="Signup" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:weightSum="12">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@color/whiteTextColor" />
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Use other Methods"
+            android:textAlignment="center"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@color/whiteTextColor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_google_plus" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
